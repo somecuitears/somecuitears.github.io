@@ -1,0 +1,12 @@
+#Folder to Ignore
+Untracked/
+bin/
+obj/
+.vs/
+node_modules/
+
+#Files to ignore
+.bin
+.tmp
+.log
+package-lock.json
