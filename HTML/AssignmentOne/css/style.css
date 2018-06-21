@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Klavika Bold", "FreightSans Pro", "Segoe UI Historic", "Segoe UI", "Helvetica", "Arial", sans-serif;
+}
+
+td {
+    padding-left: 10px;
+}
+
+
+select {
+    height: 30px;
+    width: 70px;
+    margin-right: 0;
+}
+
+label {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+input[type="button"] {
+    border-color: #33518b;
+    border-width: thin;
+    width: 55px;
+    height: 24px;
+    background-color: #4267b2;
+    color: white
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    margin: 0 15px;
+}
+
+button {
+    width: 200px;
+    height: 37px;
+    margin-bottom: 20px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+#wrapper {
+    width: :100%;
+    height: 831px;
+    background-image: url("../image/bg.png");
+    background-repeat: repeat-x;
+}
+
+#wrapper #container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+/*Top Content*/
+
+#wrapper #top {
+    position: absolute;
+    margin: 20px auto;
+
+}
+
+#wrapper .logo-placement {
+    font-family: "Klavika Bold", sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    color: white;
+    height: 10%;
+}
+
+#wrapper .logo {
+    position: absolute;
+    visibility: visible;
+    left: 15px;
+    top: 10px;
+    z-index: 200;
+    float: left;
+    width: 170px;
+}
+
+#wrapper .for-table {
+
+    position: absolute;
+    visibility: visible;
+    left: 550px;
+    top: -10px;
+    z-index: 200;
+    width: 150px;
+}
+
+#wrapper .for-table input {
+    width: 150px;
+    height: 20px;
+    border: 1px black solid;
+}
+
+
+
+.login-text {
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Helvetica;
+}
+
+.login-button {
+    background-color: cornflowerblue;
+    border: 1px solid darkblue;
+    height: 25px;
+    width: 20px;
+}
+
+.login-button: hover {
+    background-color: darkblue;
+}
+
+#wrapper #forgot {
+    color: #8b9dc3;
+    font-size: 12px;
+    font-weight: bold;
+    top: 0px;
+}
+
+/*Middle*/
+
+#wrapper #middle {
+    margin: 0 auto;
+}
+
+/*Left Content*/
+
+#wrapper #middle #left-content {
+    margin-top: 120px;
+}
+
+#wrapper #middle #left-content .left-info {
+    margin-bottom: 10px;
+}
+
+#wrapper #middle #left-content p {
+    vertical-align: middle;
+    width: 400px;
+    float: right;
+    margin-right: 0px;
+}
+
+
+/*Right Content*/
+
+#wrapper #middle #right-content {
+    margin-top: 100px;
+    margin-left: 5%;
+}
+
+#wrapper #middle #right-content input[type="text"] {
+    border: 1px solid #8b9dc3;
+    border-radius: 5px;
+    margin: 0 5px 10px 0;
+    width: 400px;
+    height: 30px;
+    padding-left: 10px
+}
+
+.mi {
+    border: 1px solid red;
+    border-radius: 5px;
+    margin: 0 5px 10px 0;
+    width: 400px;
+    height: 30px;
+    padding-left: 10px
+}
+
+#wrapper #middle #right-content input[type="password"] {
+    border: 1px solid #8b9dc3;
+    border-radius: 5px;
+    margin: 0 5px 10px 0;
+    width: 400px;
+    height: 30px;
+    padding-left: 10px
+}
+
+#wrapper #footer {
+    margin: 50px auto 0 auto;
+    width: 100%;
+}

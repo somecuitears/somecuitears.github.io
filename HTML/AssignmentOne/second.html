@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment One : Result</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <body>
+        <div id="ema"></div>
+        <h1 id="emai"></h1>
+        <a href="index.html" style="text-decoration: none">Go Back</a>
+        <script type="text/javascript">
+            var url_string = window.location.href;
+            var url = new URL(url_string);
+            var email = url.searchParams.get("email");
+            console.log(email);
+            document.getElementById("ema").innerHTML = "Email : " + email;
+            document.getElementById("emai").innerHTML = "Email : " + email;
+
+        </script>
+    </body>
+</head>

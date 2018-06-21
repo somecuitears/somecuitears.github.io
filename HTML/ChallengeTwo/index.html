@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Challenge Two: Form validation</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+</head>
+
+<body id="wrapper">
+    <h1>Test JavaScript Form Validation</h1>
+    <form name="jsFormValid">
+        <table>
+            <tr>
+                <td width=35%>Name</td>
+                <td width=25%><input type="text" name="fname" onfocusout="NameValidate();" /></td>
+                <td id="nameError"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" name="address" /></td>
+            </tr>
+            <tr>
+                <td>Zip Code</td>
+                <td><input type="text" name="zip" onkeypress="ZipValidate();" /></td>
+                <td id="zipError"></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="country" onchange="CountryValidate();">
+                        <option selected value="">Please Select...</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="China">China</option>
+                    </select>
+                </td>
+                <td id="countryError"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male" onclick="GenderValidate();" /><label>Male</label>
+                    <input type="radio" name="gender" value="female" onclick="GenderValidate();" /><label>Female</label>
+                </td>
+                <td id="genderError"></td>
+            </tr>
+            <tr>
+                <td>Preferences</td>
+                <td>
+                    <input type="checkbox" name="color" value="red" onclick="ColorValidate();" /><label>Red</label>
+                    <input type="checkbox" name="color" value="green" onclick="ColorValidate();" /><label>Green</label>
+                    <input type="checkbox" name="color" value="blue" onclick="ColorValidate();" /><label>Blue</label>
+                </td>
+                <td id="prefError"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input type="text" name="phone" onfocusout="PhoneValidate();" onKeypress="PhoneValidate();" /></td>
+                <td id="phoneError"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="email" onfocusout="EmailValidate();" /></td>
+                <td id="emailError"></td>
+            </tr>
+            <tr>
+                <td>password (6-8 characters)</td>
+                <td><input type="password" name="password" /></td>
+                <td id="passError"></td>
+            </tr>
+            <tr>
+                <td>Verify Password</td>
+                <td><input type="password" name="confirmPassword" onkeypress="PasswordValidation();" onfocusout="PasswordValidation();" /> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="SEND" onclick="Validate();" />
+                    <input type="button" value="CLEAR" onclick="Reset();" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+    </script>
+</body>
+
+</html>

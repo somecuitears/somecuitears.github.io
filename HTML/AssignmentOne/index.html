@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment One : Facebook</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/script.js"></script>
+</head>
+
+<body id="wrapper">
+
+    <div id="container">
+
+        <!--TOP START -->
+
+        <div id="top">
+            <img src="image/fb_img.png" width="" class="logo">
+            <div>
+                <table class="for-table">
+                    <tr>
+                        <td class="login-text">Email or Phone</td>
+                        <td class="login-text">Password</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="lemail" /></td>
+                        <td><input type="password" id="lpassword" /></td>
+                        <td><input type="button" value="Login" style="border-color: #33518b; border-width: thin; width: 55px; height: 24px; background-color: #4267b2; color: white" onclick="LoginValidate();" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="forgot"><a href="" style="text-decoration: none;color: azure">Forgot account?</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!--TOP END -->
+
+        <div class="clear"></div>
+        <div id="middle">
+            <div>
+                <div id="left-content" style="width: 50%;float: left">
+                    <div style="font:Freight;font-size: 32px;font-weight: bolder;margin-bottom: 40px">
+                        Connect with friends and the world around you on Facebook.
+                    </div>
+                    <div class="left-info">
+                        <img src="image/feed.png">
+                        <p><strong>See photos and updates</strong> from friends in News Feed.</p>
+                    </div>
+                    <div class="left-info">
+                        <img src="image/share.png">
+                        <p><strong> Share what's new</strong> in your life on your Timeline.</p>
+                    </div>
+                    <div class="left-info">
+                        <img src="image/search.png">
+                        <p><strong>See photos and updates</strong> from friends in News Feed.</p>
+                    </div>
+                </div>
+                <div id="right-content" style="width: 45%;float: left">
+                    <div>
+                        <p style="font-weight: bolder;font-size: 48px;margin: 0 0 5px 0">Sign Up</p>
+                    </div>
+                    <div style="margin-bottom: 20px">It’s free and always will be.</div>
+                    <div>
+                        <tr>
+                            <td><input type="text" placeholder="First Name" style="width: 190px;" id="fname" onfocusout="NameValidate();" /><input type="text" placeholder="Last Name" style="width: 190px;" id="lname" /></td>
+
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <td><input type="text" placeholder="Mobile number or Email" id="nemail" /> </td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <td><input width="400px" type="password" placeholder="New password" id="password" /> </td>
+                        </tr>
+                    </div>
+                    <div style="margin: 0 20px 20px 0;">
+                        <tr>
+                            <td>Birthday </td>
+                        </tr>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <tr>
+                            <td style="margin-right: 0;"><select><option>Jan</option></select></td>
+                            <td style="margin-right: 0;"><select><option>01</option></select></td>
+                            <td style="margin-right: 0;"><select><option>1999</option></select></td>
+                            <td style="margin-right: 0; float: left">
+                                <span style="font-size:12px; width: 100px;padding-top: 10px;">Why do I need to provide my birthday?</span>
+                            </td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <td><input type="radio" name="gender" /></td>Female
+                            <td><input type="radio" name="gender" /></td>Male
+                        </tr>
+                    </div>
+                    <div>
+                        <p style="font-size: 12px; padding-right: 80px;font-weight: 400;">By clicking Sign Up, you agree to our Terms, Data Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time.</p>
+                    </div>
+                    <div><button style="background-image: url(image/btnBg.png);font-weight: 400" onclick="NameValidate();">Sign Up</button></div>
+                    <div>
+                        <hr>
+                    </div>
+                    <div style="font-size: 14px;"><strong><a href="#" style="text-decoration: none">Create a Page</a> for a celebrity, band or business.</strong></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="footer">
+            <div style="font-size: 14px;">
+                <ul>
+                    <li>English (US)</li>
+                    <li>नेपाली</li>
+                    <li>Español</li>
+                    <li>Português (Brasil)</li>
+                    <li>Français (France)</li>
+                    <li>Deutsch</li>
+                    <li>Italiano</li>
+                    <li>العربية</li>
+                    <li>中文(简体)</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Sign Up</li>
+                    <li>Log In</li>
+                    <li>Messenger</li>
+                    <li>Facebook Lite</li>
+                    <li>Mobile</li>
+                    <li>Find Friends</li>
+                    <li>People</li>
+                    <li>Places</li>
+                    <li>Games</li>
+                    <li>Locations</li>
+                    <li>Marketplace</li>
+                    <li>Videos</li>
+                    <li>Groups</li>
+                    <li>Recipes</li>
+                    <li>Sports</li>
+                    <li>Look</li>
+                    <li>Moments</li>
+                    <li>Instagram</li>
+                    <li>Local</li>
+                    <li>About</li>
+                    <li>Create</li>
+                    <li>AdCreate</li>
+                    <li>Page</li>
+                    <li>Developers</li>
+                    <li>Careers</li>
+                    <li>Privacy</li>
+                    <li>Cookies</li>
+                    <li>Ad</li>
+                    <li>Choices</li>
+                    <li>Terms</li>
+                    <li>Help</li>
+                    <li>Settings</li>
+
+                </ul>
+            </div>
+            Facebook 2018
+        </div>
+    </div>
+</body>
+
+</html>

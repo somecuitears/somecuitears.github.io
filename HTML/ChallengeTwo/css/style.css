@@ -1,0 +1,27 @@
+/*reset*/
+
+span {
+    color: red;
+}
+
+table {
+    width: 800px;
+    /*    border: 1px solid black;*/
+}
+
+tr {
+    width: 800px;
+    height: 30px;
+
+    /*    border: 1px solid black;*/
+}
+
+
+.error {
+    margin-left: 5px;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 600px;
+}
