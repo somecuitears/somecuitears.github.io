@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 10px 50px;
+    // background-color: cadetblue;
+}
+
+.box-container {
+    height: auto;
+
+    float: left;
+    padding-bottom: 5px;
+    // border: 1px solid green;
+    // background-color: chocolate;
+}
+
+.box {
+    border: 1px solid darkgray;
+    min-height: 550px;
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+ul {
+    text-align: left;
+    margin: 0 24px 0 20px;
+    color: black;
+    font-size: 16px;
+    line-height: 1.25;
+    display: grid;
+}
+
+li {
+    list-style-type: circle;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    .sub-title {
+        margin-bottom: 20px;
+    }
+}
+
+%rad-box {
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    height: 22px;
+    width: 22px;
+    margin: 20px auto;
+}
+
+.unselected {
+    @extend %rad-box;
+    background-image: url("../img/product_circle_large.png");
+}
+
+.selected {
+    @extend %rad-box;
+    background-image: url("img/product_check_large.png");
+}
+
+.mac-image {
+    display: block;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 180px;
+    margin: 10px auto;
+    float: left;
+    padding: 0 10px;
+    background-position: center bottom;
+}
+
+.macbook {
+    @extend .mac-image;
+    background-image: url("img/macbook.png");
+}
+
+.macbook-pro-13 {
+    @extend .mac-image;
+    background-image: url("img/macbook_pro_13.png");
+}
+
+.macbook-pro-15 {
+    @extend .mac-image;
+    background-image: url("img/mac_book_pro_15.png");
+}
+
+.macbook-air-13 {
+    @extend .mac-image;
+    background-image: url("img/mabook_air_13.png");
+}
+
+.macbook-pro-13-touch {
+    @extend .mac-image;
+    background-image: url("img/macbook_pro_touchbar_13.png");
+}
+
+.macbook-pro-15-touch {
+    @extend .mac-image;
+    background-image: url("img/macbook_pro_touchbar_15.png");
+}
+
+.spac {
+    min-height: 38px;
+    display: block;
+}
+
+@media only screen and (max-width:500px) {
+    .mac-image {
+        background-size: 144px 58px;
+        height: 58px;
+        width: 100%;
+    }
+
+    li{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .mac-image {
+        background-size: auto 98px;
+        height: 112px;
+        width: 100%;
+    }
+    li{
+        font-size: 16px;
+    }
+}
